@@ -22,6 +22,7 @@ body{
     text-align: center;
     left: 50%;
     top: 55%;
+    height: fit-content;
     width: fit-content;
     position: absolute;
     border-radius: 10px;
