@@ -1,11 +1,14 @@
 body{
     background-color: rgb(240, 172, 25);
 }
+::-webkit-scrollbar{
+    display: none;
+}
 .box{
     outline: 2px solid black;
-    width: 300px;
-    height: 300px;
-    font-size: 280px;
+    width: 120px;
+    height: 120px;
+    font-size: 100px;
     text-align: center;
     border-radius: 30px;
     background-color: aquamarine;
@@ -25,15 +28,15 @@ body{
 }
 .whowon{
     width: fit-content;
-    min-height: 57px;
+    min-height: 36px;
     margin: auto;
-    font-size: 50px;
+    font-size: 30px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
 }
 .newgame{
-    width: 100px;
-    height: 80px;
+    width: 70px;
+    height: 60px;
     margin: auto;
     font-size: 20px;
     border-radius: 10px;
@@ -45,6 +48,46 @@ body{
 .newhold{
     margin: auto;
     width: fit-content;
+}
+
+.line-1{
+    z-index: 15;
+    opacity: 0.5;
+}
+.line-2{
+    z-index: 10;
+    opacity: 0.7;
+}
+.line-3{
+    z-index: 5;
+}
+.wave{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 81vh;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+@media (max-width: 600px) {
+    .wave {
+        width: 200%;
+    }
+}
+.wave1{
+    -webkit-background-size: 50% 80px;
+    background-size: 50% 80px;
+}
+.wave2{
+    -webkit-background-size: 50% 100px;
+    background-size: 50% 100px;
+    animation: animate 12s linear infinite;
+}
+.wave3{
+    -webkit-background-size: 50% 80px;
+    background-size: 50% 80px;
+    animation: animate 18s linear infinite;
 }
 
 
