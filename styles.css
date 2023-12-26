@@ -1,5 +1,6 @@
 body{
     background-color: rgb(240, 172, 25);
+    overflow: hidden;
 }
 ::-webkit-scrollbar{
     display: none;
